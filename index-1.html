@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image of cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .parent{
+            width: 40vw;
+            height: 95vh;
+            margin: 30px auto;
+            width: 50%; 
+            background-color: bisque;
+            position: relative;
+        }
+        .Image{
+            width: 280px;
+            /* margin-left: 90px; */
+            padding: 10px;
+        }
+        .box{
+            margin: 8px;
+            display: flex;
+            margin: 0 auto;
+            width: 50%; 
+            color: #fff;
+        }
+        .box-1, .box-2, .box-3{
+            border: 1px solid black;
+            margin: 4px;
+            padding: 5px;
+            background-color: rgb(93, 80, 61);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .subject{
+            text-align: center;
+            margin: 8px;
+            text-overflow: ellipsis;
+            color: red;
+        }
+        .fullform{
+            overflow: auto;
+        }
+        .btn{
+            margin: 10px;
+            padding: 5px;;
+            border-radius: 5px;
+            background-color: rgb(93, 80, 61);
+            color: #fff;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .parent {
+                width: 90%;
+                height: auto;
+            }
+            .Image {
+                width: 100%;
+            }
+            .box {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img class="Image" src="ganesha.png" alt="Videogames image">
+        </img>
+        <div class="box">
+            <span class="box-1">Ganesha</span>
+            <span class="box-2">Ganpati bappa</span>
+            <span class="box-3">Riddi Shiddi Maa</span>
+        </div>
+        <h2 class="subject">वक्रतुंड महाकाय सूर्यकोटि समप्रभ। निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</h2>
+        <p class="fullform">भगवान गणेश को सभी देवताओं में सर्वप्रथम पूजनीय माना जाता है। हर शुभ कार्यों में सबसे पहले इनकी पूजा की जाती है, तभी कोई मंगल कार्य शुरू किया जाता है। कहते हैं इनका</p>
+        
+        <button class="btn">
+                Read More
+        </button>
+    </div>
+</body>
+
+</html>
